@@ -1,8 +1,13 @@
 // Note that this file isn't processed by Vite, see https://github.com/brillout/vite-plugin-ssr/issues/562
 
-const express = require('express')
-const compression = require('compression')
-const { renderPage } = require('vite-plugin-ssr')
+import path from 'path';
+import express from 'express'
+import { fileURLToPath } from 'url';
+import compression from 'compression'
+import {renderPage} from 'vite-plugin-ssr/server'
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const isProduction = process.env.NODE_ENV === 'production'
 const root = `${__dirname}/..`
