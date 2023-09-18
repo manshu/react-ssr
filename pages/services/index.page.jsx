@@ -5,7 +5,7 @@ export { Page }
 function Page() {
     return (
         <>
-            <h1 className="text-5xl text-green-500">I am home page</h1>
+            <h1>I am services page</h1>
         </>
     )
 }
