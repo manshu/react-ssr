@@ -18,8 +18,8 @@ async function render(pageContext) {
 
     // See https://vite-plugin-ssr.com/head
     const { documentProps } = pageContext.exports
-    const title = (documentProps && documentProps.title) || 'Vite SSR app'
-    const desc = (documentProps && documentProps.description) || 'App using Vite + vite-plugin-ssr'
+    const title = (documentProps && documentProps.title) || 'CRM Gurus - Let us handle the software'
+    const desc = (documentProps && documentProps.description) || 'CRM Gurus Official Website'
 
     const documentHtml = escapeInject`<!DOCTYPE html>
     <html lang="en">
